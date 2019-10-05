@@ -10,19 +10,27 @@
 <body>
         <form method='post'action=''>
             <p>
-            <label for='email'> E-mail:</label>
-            <input type='email'id='email'name='email'>
+            <label for='email'>E-mail:</label>
+            <input type='email'id='email' autofocus>
+            <span class='hint'>por exemplo, seunome@dominio.com.</span>
+            <span class="error">Preencha o seu e-mail corretamente</span>
             </p>
             <p>
                 <label for="subject">Assunto:</label>
                 <input type="text" id="subject">
+                <span class='hint'>Nos diga qual é o seu problema ou ideia.</span>
             </p>
             <p>
-                <label for='content'>Mensagem:</label>
-                <textarea id='content'></textarea>
+                <label for="content">Mensagem:</label>
+                <textarea id="content"></textarea>
+                <span class="hint">
+                    Escreva a sua mensagem, em até 500 caracteres.
+                </span>
+                <span class="error">A mensagem tem mais de 500 caracteres.</span>
             </p>
             <button>Enviar mensagem</button>
         </form>
+        
     
 </body>
 </html>
